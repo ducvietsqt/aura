@@ -84,7 +84,7 @@
   //border: solid 1px red;
   padding: 20px 0px;
   iframe {
-    border: solid 1px blue;
+    //border: solid 1px blue;
     display: block;
     width: 100%;
   }
@@ -219,9 +219,81 @@
   }
 }
 .contain_subscribe--form {
-  border: solid 1px red;
+  //border: solid 1px red;
   input {
     font-size: 30px;
-    background: #F1F2F2
+    background: #F1F2F2;
+    padding: 10px 20px;
+    color: #D1D3D4;
+    display: block;
+    border: none;
+    float: right;
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+  button {
+    clear: both;
+    background: none;
+    display: block;
+    width: 150px;
+    float: right;
+    border: none;
+    margin-top: 10px;
+    &:focus, &:active {
+      outline: none;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
+
+.footer_page {
+  height: 362px;
+  width: 100%;
+  background-image: url($tpatch_image + "bg_foo.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  //border: solid 1px red;
+  position: relative;
+  padding: 100px 0px 0px 0px;
+ .img_mk {
+   display: block;
+   position: absolute;
+   left: 0px;
+   width: 45%;
+   bottom: 0px;
+ }
+}
+.social_foo {
+  margin-bottom: 10px;
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .fab {
+     margin: 0px 5px;
+  }
+}
+.item-info-foo {
+  //border: solid 1px red;
+  max-width: 340px;
+  p:not(.social_foo) {
+    font-size: 16px;
+    &.text-white {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.foot_bar {
+  background: #DDDDDD;
+  height: 60px;
+  line-height: 60px;
+  a {
+    color: #000;
   }
 }
