@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'iCielMabryPro-Regular';
+  src: url($tpatch_fonts + 'iCielMabryPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url($tpatch_fonts + 'iCielMabryPro-Regular.otf')  format('opentype'),
+  url($tpatch_fonts + 'iCielMabryPro-Regular.woff') format('woff'),
+  url($tpatch_fonts + 'iCielMabryPro-Regular.ttf')  format('truetype'),
+  url($tpatch_fonts + 'iCielMabryPro-Regular.svg#iCielMabryPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font_icon {
+  font-size: 30px;
+
+}

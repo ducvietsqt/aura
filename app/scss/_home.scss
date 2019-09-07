@@ -1,0 +1,227 @@
+.lan_top {
+  //border: solid 1px red;
+  text-align: right;
+  padding: 20px 0px 0px 0px;
+  .lan_item {
+    display: inline-block;
+    color: #D0D2D3;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+
+.topbar {
+  //border: solid 1px red;
+  position: relative;
+  z-index: 9;
+  .topbar--container {
+    //border: solid 1px blue;
+    //display: flex;
+    //align-items: center;
+    //justify-content: space-between;
+    .logo {
+      width: 188px;
+      a, img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+    .nav_right {
+
+    }
+  }
+}
+
+.list-nav-menu {
+  transition: all 0.25s linear;
+  * {
+    transition: all 0.25s linear;
+  }
+  .nav_item {
+    //border: solid 1px red;
+    margin-right: 30px;
+    position: relative;
+
+    .link_item {
+      font-size: 19px;
+      color: #231F20;
+    }
+    &:hover {
+      .submenu {
+        opacity: 1;
+      }
+    }
+    .submenu {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      opacity: 0;
+      //border: solid 1px red;
+      background: url($tpatch_image + "bg-menu.png") no-repeat top left;
+      width: 175px;
+      height: 124px;
+      padding: 30px 30px 0px 10px;
+      li {
+        //border: solid 1px blue;
+        text-align: right;
+        margin-bottom: 5px;
+        &:first-child {
+          border-bottom: solid 1px #231F20;
+        }
+        a {
+          color: #231F20;
+          &:hover, &.active {
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  //border: solid 1px red;
+  padding: 20px 0px;
+  iframe {
+    border: solid 1px blue;
+    display: block;
+    width: 100%;
+  }
+}
+
+.section {
+  padding: 20px 0px;
+}
+
+.slogan_item {
+  text-align: center;
+  .img {
+    height: 264px;
+    display: flex;
+    align-items: center;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+.list_contain_slogan {
+
+  .carousel_home {
+    .contain-item {
+      //border: solid 1px red;
+      display: flex;
+      .caption_inner {
+        width: 320px;
+        padding: 0px 20px;
+        //border: solid 1px red;
+        img {
+          //transform: translateX(50px);
+        }
+      }
+      .pic_inner {
+        flex: 1;
+        padding-top: 100px;
+        //border: solid 1px red;
+        img {
+          display: block;
+          min-width: 100%;
+        }
+      }
+    }
+    .slide_dot_both {
+      display: flex;
+      padding: 50px 0px 50px 100px;
+      .carousel-indicators {
+        position: static;
+        margin: 0px;
+        border: solid 1px #231F20;
+        li {
+          all: unset;
+          font-size: 20px;
+          cursor: pointer;
+          border: solid 1px #231F20;
+          padding: 5px 20px;
+          display: block;
+          &.active {
+            background: #f37723;
+          }
+        }
+      }
+      .carousel-control-prev, .carousel-control-next {
+        position: static;
+        width: auto;
+        border-bottom: solid 2px #231F20;
+        border-top: solid 2px #231F20;
+        opacity: 1;
+        padding: 0px 20px;
+      }
+    }
+  }
+}
+
+.contain_links_visit {
+  .box-coming {
+    .img {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .drs {
+      width: 70%;
+      float: right;
+      clear: both;
+    }
+    .name {
+      font-size: 20px;
+      color: #231F20;
+      border-bottom: solid 2px #231F20;
+
+    }
+    .link_list {
+      color: red;
+      border-bottom: solid 2px #231F20;
+      display: flex;
+      justify-content: space-between;
+      a {
+        font-size: 20px;
+        color: #231F20 !important;
+
+      }
+    }
+    .btn-visit {
+      color: #231F20;
+
+    }
+  }
+  .disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
+
+.contain_stay--box-small {
+  //border: solid 1px red;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  img {
+    margin-right: 10px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.contain_subscribe--form {
+  border: solid 1px red;
+  input {
+    font-size: 30px;
+    background: #F1F2F2
+  }
+}
