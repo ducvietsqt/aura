@@ -1,0 +1,260 @@
+.bg_bn {
+  float: right;
+  max-width: none;
+}
+
+.banner_sanpham {
+  overflow: hidden;
+}
+
+.caption_banner {
+  width: 370px;
+  position: absolute;
+  bottom: 140px;
+  z-index: 3;
+  .title {
+    font-size: 34px;
+  }
+  .drs {
+    font-size: 16px;
+    color: #ffffff;
+    width: 244px;
+  }
+  .link {
+
+  }
+}
+
+.banner_caption_sanpham {
+
+}
+
+.contain_banner_link {
+  width: 347px;
+  .links_box {
+    .item {
+      font-size: 30px;
+      border: solid 2px #000;
+      border-right: 0px;
+      border-left: 0px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+      padding: 10px 20px;
+      img {
+        margin-left: 15px;
+      }
+      &:hover {
+        background: #E5E6E7;
+      }
+      &:first-child {
+        border-bottom: none;
+      }
+    }
+  }
+  .img_right {
+
+  }
+}
+
+.link_box {
+  border: solid 2px #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  color: #000;
+  font-size: 20px;
+  padding: 5px 0px;
+  img {
+    margin-left: 10px;
+
+  }
+}
+
+.box_center_link {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-caption--working {
+  top: 0px;
+  left: auto;
+  right: 60px;
+  color: #000;
+  padding: 0px;
+  padding-top: 30px;
+  width: 500px;
+}
+
+.carousel-working {
+  .carousel-item {
+    .img_banner {
+
+    }
+  }
+  .carousel-indicators {
+    bottom: 40px;
+    li {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: #ffffff;
+      border: solid 2px #000000;
+      &.active {
+        background: transparent;
+      }
+    }
+  }
+  .carousel-control-prev, .carousel-control-next {
+    //border: solid 1px red;
+    width: auto;
+    padding: 0px 10px;
+  }
+  .carousel-control-prev {
+
+  }
+  .carousel-control-next {
+
+  }
+}
+
+.top_banner {
+  margin-bottom: 20px;
+  .text-big {
+    font-size: 30px;
+  }
+  .text-small {
+    font-size: 16px;
+  }
+}
+.banner_caption--table {
+  width: 100%;
+  margin-top: 30px;
+  tr {
+    td {
+      padding: 10px 0px;
+      strong {
+        color: #ffffff;
+      }
+    }
+  }
+  tr.bor {
+    td {
+      border-bottom: solid 2px #000000;
+    }
+  }
+
+}
+
+.nav-tabs-aura {
+  border: none;
+  .nav-item {
+    &:first-child {
+      .nav-link {
+        border-left: none !important;
+        &.active {
+          &:before {
+            content: '';
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            display: block;
+            left: 0px;
+            top: 0px;
+            z-index: 9;
+            background: #ffffff;
+          }
+        }
+      }
+    }
+    &:last-child {
+      .nav-link {
+        &.active {
+          &:after {
+            content: '';
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            display: block;
+            right: 0px;
+            top: 0px;
+            z-index: 9;
+            background: #ffffff;
+          }
+        }
+      }
+    }
+
+    .nav-link, .nav-link.active, .nav-link:hover, .nav-link:focus {
+      border: solid 2px #000000;
+      border-radius: 0px;
+      color: #000000;
+      border-right: none;
+    }
+    .nav-link.active {
+      background: #F3B918;
+      position: relative;
+
+    }
+  }
+
+}
+.tab-content-aura {
+  .address_text {
+    font-size: 14px;
+  }
+}
+// carousel-even
+.carousel-even {
+  .carousel-caption--working {
+    //border: solid 1px blue;
+    padding-top: 0px;
+  }
+}
+.bor-line-both {
+  border-bottom: solid 2px #000000;
+}
+.info_title {
+  font-size: 16px;
+  margin: 10px 0px;
+}
+.box_small_dichvu {
+  //border: solid 1px red;
+  display: inline-block;
+  vertical-align: top;
+  img {
+    display: block;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 7px;
+    text-align: left;
+  }
+}
+.box-list-dichvu {
+  //border: solid 1px gold;
+  display: flex;
+  flex-wrap: wrap;
+  .box_small_dichvu {
+    width: 25%;
+    //margin-bottom: 10px;
+    padding: 5px 5px;
+  }
+}
+.bor-y {
+  border-top: solid 2px #000000;
+  border-bottom: solid 2px #000000;
+  padding-top: 10px;
+  margin-bottom: 10px;
+
+}
+.link_img--right {
+  float: right;
+}
+.box_map {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
