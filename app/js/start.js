@@ -4,7 +4,22 @@ $(document).ready(function () {
         $(window).on('load', function () {
             // alert(1);
             $('body').addClass('loaded');
-
+            $("#carouselExampleIndicators4").on('slide.bs.carousel', function (data) {
+                // do something...
+                // console.log(data.to)
+                $("#carouselExampleIndicators3").carousel(data.to);
+            })
+            $("#carouselExampleIndicators5").on('slide.bs.carousel', function (data) {
+                // do something...
+                // console.log(data.to)
+                $("#carouselExampleIndicators6").carousel(data.to);
+            })
+            $('.link_tab_direct').on('click', function () {
+                var tab = $(this).data('href')
+                $('.nav-tabs a[href="#'+tab+'"]').tab('show')
+                // $('.link_tab_direct').siblings().removeClass('active');
+                // $(this).addClass('active');
+            })
         })
     })
 });
