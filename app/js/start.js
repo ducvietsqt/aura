@@ -4,22 +4,32 @@ $(document).ready(function () {
         $(window).on('load', function () {
             // alert(1);
             $('body').addClass('loaded');
-            $("#carouselExampleIndicators4").on('slide.bs.carousel', function (data) {
+            $("#carouselExampleIndicators1").on('slide.bs.carousel', function (data) {
                 // do something...
                 // console.log(data.to)
-                $("#carouselExampleIndicators3").carousel(data.to);
+                $("#carouselExampleIndicators1-1").carousel(data.to);
+                console.log($(this).attr("id"))
             })
-            $("#carouselExampleIndicators5").on('slide.bs.carousel', function (data) {
+            $("#carouselExampleIndicators2").on('slide.bs.carousel', function (data) {
                 // do something...
                 // console.log(data.to)
-                $("#carouselExampleIndicators6").carousel(data.to);
+                $("#carouselExampleIndicators2-2").carousel(data.to);
             })
-            $('.link_tab_direct').on('click', function () {
+            /*$('.link_tab_direct').on('click', function () {
                 var tab = $(this).data('href')
                 $('.nav-tabs a[href="#'+tab+'"]').tab('show')
                 // $('.link_tab_direct').siblings().removeClass('active');
                 // $(this).addClass('active');
+            })*/
+
+            $('.accordion--sanpham').on('shown.bs.collapse', function (e) {
+                // do something...
+                console.log($(e.target).attr("data-carouse"), e.target)
+                var crs = "#" + $(e.target).attr("data-carouse");
+                $('.active_show').removeClass('active_show');
+                $(crs).addClass('active_show');
             })
+
         })
     })
 });

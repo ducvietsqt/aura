@@ -22,6 +22,19 @@
 .carousel-aura-big {
   width: calc(100% - 340px);
   float: right;
+  position: relative;
+  overflow: hidden;
+  .carousel-aura-sanpham {
+    //position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    display: none;
+    &.active_show {
+      opacity: 1;
+      display: block;
+    }
+  }
 
 }
 
@@ -29,8 +42,8 @@
   width: 340px;
   padding: 0px 20px;
   .carousel-aura-sanpham {
-    border-top: solid 2px #000000;
-    border-bottom: solid 2px #000000;
+    //border-top: solid 2px #000000;
+    //border-bottom: solid 2px #000000;
     & > div {
     }
     .carousel-inner {
@@ -77,11 +90,16 @@
   //border: solid 1px red;
   .link_tab_direct {
     font-size: 25px;
+    //border-top: solid 2px #000000;
     border-bottom: solid 2px #000000;
     cursor: pointer;
-    &.active {
+    -webkit-appearance: none;
+    &[aria-expanded="true"] {
       span {
         background: #FFBB00;
+        img {
+          transform: rotate(90deg);
+        }
       }
     }
     span {
@@ -92,7 +110,12 @@
   }
 
 }
+.collapse.collapse--sanpham {
+  border-bottom: solid 2px #000000;
+}
+.accordion.accordion--sanpham {
 
+}
 .item_drs_dichvu {
   display: flex;
   align-items: start;
@@ -141,6 +164,7 @@
 
 .list_collapse {
   .item {
+
     border-bottom: solid 2px #000000;
     .item-link {
       display: flex;
