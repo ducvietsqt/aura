@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Dai Viet Edu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+    <!--build:css css/main.css-->
+    <link href="css/main.css" rel="stylesheet">
+    <!--endbuild-->
+</head>
+<body>
+<div class="loading_page">
+    <div data-wow-iteration="10" data-wow-duration="0.15" class="wow pulse bg_img"></div>
+</div>
+<div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<!--build:js js/start.js -->
+<script src="js/start.js"></script>
+<!-- endbuild -->
+<div id="page">
+    <div class="container">
+        <div class="lan_top">
+            <a href="#" class="lan_item">en</a>
+            <a href="#" class="lan_item">vi</a>
+        </div>
+    </div>
+
+    <div class="topbar">
+        <div class="container">
+            <div class="d-flex justify-content-between topbar--container">
+                <h1 class="logo flex-shrink-1" style="position:relative; z-index: 1;">
+                    <a href="#">
+                        <img src="images/Logo.png" alt=""/>
+                    </a>
+                </h1>
+
+                <div class="d-flex nav_right">
+                    <ul class="d-flex align-items-center list-nav-menu">
+
+                        <li class="nav_item">
+                            <a class="link_item">Đặt tham quan</a>
+                        </li>
+                        <li>
+                            <button class="link_arr_submit" type="submit">
+                                <img width="15" class="mr-2 d-block revert" src="images/arr_w.png" alt=""/> Hủy
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="section_content_date mt-5">
+                <div class="left_form">
+                    <h2 class="mb-2">
+                        Aura Him Lam
+                    </h2>
+                    <p class="mb-2">
+                        Số 1 – 3, đường D4, KDC Him Lam,
+                        P.Tân Hưng, Quận 7, TP.HCM, Việt Nam
+                    </p>
+                    <p class="mb-5">
+                        Đăng ký sử dụng dịch vụ tại Aura District. Bộ phận CSKH của chúng tôi sẽ liên hệ với bạn trong
+                        24h để
+                        xác
+                        nhận thông tin.
+                    </p>
+                    <form action="" class="form_input_date mb-5">
+                        <div class="input_group mb-4">
+                            <input placeholder="Chọn ngày ghé tham quan" class="datepicker form-control" type="text"/>
+                            <img class="icon_right" src="images/icon_event.png" alt=""/>
+                        </div>
+                        <div class="input_group mb-4">
+                            <input placeholder="Chọn giờ " class="form-control" type="time"/>
+                            <img class="icon_right" src="images/icon_event.png" alt=""/>
+                        </div>
+                        <div class="input_group mb-4">
+                            <input placeholder="Tên" class="form-control" type="text"/>
+                        </div>
+                        <script type="text/javascript">
+                            $('.datepicker').datepicker({
+                                weekStart: 1,
+                                color: 'red'
+                            });
+                        </script>
+                        <div class="input_group mb-4">
+                            <input placeholder="Số điện thoại" class="form-control" type="number"/>
+                        </div>
+                        <div class="input_group mb-4">
+                            <input placeholder="Email" class="form-control" type="email"/>
+                        </div>
+                        <div>
+                            <button class="link_arr_submit" type="submit">
+                                Gửi <img class="ml-2 d-block" src="images/arr_w.png" alt=""/>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right_info pl-4">
+                    <img src="images/crs_date.png" class="d-block w-100" alt="..."/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_page">
+        <img class="img_mk" src="images/Asset 90.png" alt=""/>
+        <div class="container">
+            <div class="d-flex">
+                <div class="ml-auto">
+                    <div class="d-flex">
+                        <div class="item item-info-foo px-3">
+                            <p class="d-flex align-items-center social_foo hidden">
+                                <a href="#" class="text-white fab fa-youtube"></a>
+                                <a href="#" class="text-white fab fa-instagram"></a>
+                                <a href="#" class="text-white fab fa-facebook"></a>
+                            </p>
+                            <p class="text-white">
+                                Về chúng tôi
+                            </p>
+                            <p>
+                                dịch vụ
+                            </p>
+                            <p>
+                                > Co-working
+                            </p>
+                            <p>
+                                > Co-livings
+                            </p>
+                            <p>
+                                địa điểm
+                            </p>
+                            <p>
+                                thành viên
+                            </p>
+                            <p>
+                                giới thiệu
+                            </p>
+                        </div>
+                        <div class="item item-info-foo px-3">
+                            <p class="d-flex align-items-center social_foo">
+                                <a href="#" class="text-white fab fa-youtube ml-0"></a>
+                                <a href="#" class="text-white fab fa-instagram"></a>
+                                <a href="#" class="text-white fab fa-facebook"></a>
+                            </p>
+                            <p class="text-white">
+                                Liên lạc
+                            </p>
+                            <p>
+                                Aura District
+                            </p>
+                            <p>
+                                1 – 3, đường D4, KDC Him Lam, <br/>
+                                P.Tân Hưng, Quận 7, TP.HCM, Việt Nam <br/>
+                                <i class="fas fa-phone"></i> &nbsp;+84 90 6049391 <br/>
+                                <i class="far fa-paper-plane"></i>&nbsp; info@auradistrict.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot_bar">
+        <div class="px-3">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <a href="#">
+                        Powered by Aura District 2019
+                    </a>
+
+                </div>
+                <div>
+                    <a href="#" class="mx-2">
+                        Về
+                    </a>
+                    <a href="#" class="mx-2">
+                        Cookie Policy
+                    </a>
+                    <a href="#" class="mx-2">
+                        404
+                    </a>
+                </div>
+                <div>
+                    <a href="#" style="color: #009444;" class="mx-2">
+                        Instagram
+                    </a>
+                    <a href="#" style="color: #009444;" class="mx-2">
+                        Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=119648672255722&autoLogAppEvents=1"></script>
+</body>
+</html>

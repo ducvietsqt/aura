@@ -76,6 +76,17 @@ gulp.task('fonts', function() {
     return gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
 })
+// Copying css
+gulp.task('cp_css', function() {
+    return gulp.src('app/css/**/*')
+        .pipe(gulp.dest('dist/css'))
+})
+// Copying js
+gulp.task('cp_js', function() {
+    return gulp.src('app/js/**/*')
+        .pipe(gulp.dest('dist/js'))
+})
+
 
 // Cleaning 
 gulp.task('clean', function() {
@@ -101,7 +112,7 @@ gulp.task('build', function(callback) {
     runSequence(
         'clean:dist',
         'sass',
-        ['useref', 'images', 'fonts'],
+        ['useref', 'images', 'fonts', 'cp_css', 'cp_js'],
         callback
     )
 })
