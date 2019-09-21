@@ -46,6 +46,12 @@
     .link_item {
       font-size: 19px;
       color: #231F20;
+      padding: 10px;
+      &:hover, &.active {
+
+        color: #000000;
+        background: #FFBB00;
+      }
     }
     &:hover {
       .submenu {
