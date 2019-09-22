@@ -21,6 +21,13 @@ $(document).ready(function () {
                 // $('.link_tab_direct').siblings().removeClass('active');
                 // $(this).addClass('active');
             })*/
+            $('.nav-tab-product[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                // e.target // newly activated tab
+                // e.relatedTarget // previous active tab
+                var crs = "#" + $(e.target).attr("data-carousel");
+                $('.carousel-even.carousel-even--active').removeClass('carousel-even--active');
+                $(crs).addClass('carousel-even--active');
+            });
 
             $('.accordion--sanpham').on('shown.bs.collapse', function (e) {
                 // do something...
