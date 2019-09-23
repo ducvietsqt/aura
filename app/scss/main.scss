@@ -12,6 +12,7 @@
 @import 'modal';
 @import 'datphong';
 @import 'thanhvien';
+@import 'about';
 /*component*/
 /*page*/
 
@@ -27,7 +28,9 @@ body {
     overflow-x: hidden;
     font-family: 'iCielMabryPro-Regular';
 }
-
+.clearfix {
+    clear: both !important;
+}
 a {
     &:hover,
     &:focus {

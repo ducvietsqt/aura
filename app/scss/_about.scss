@@ -1,0 +1,96 @@
+.box_about_top {
+  max-width: 520px;
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0 auto;
+  h2 {
+    font-size: 40px;
+  }
+  .text-medium {
+    font-size: 16px;
+  }
+  .text-link {
+    font-size: 20px;
+  }
+}
+
+.img_line_top {
+  //border: solid 1px red;
+  position: relative;
+  z-index: -1;
+  transform: translateY(-40px);
+}
+.font-top {
+  text-align: center;
+  display: block;
+  font-size: 30px;
+}
+.content_about_slogan {
+  //border: solid 1px red;
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  .text-top {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    transform: translateY(100px);
+  }
+  .img-content {
+    display: block;
+  }
+  .box-info {
+    //border: solid 1px red;
+    width: 400px;
+    position: absolute;
+    &.left {
+      top: 500px;
+      left: 0px;
+    }
+    &.right {
+      right: 0px;
+      bottom: 460px;
+    }
+    h4 {
+      font-weight: bold;
+      font-size: 60px;
+      text-align: center;
+      &.orange {
+        color: #FFBB00;
+      }
+      &.red {
+        color: #EE4136;
+      }
+    }
+    p {
+      font-size: 16px;
+      text-align: center;
+      width: 267px;
+      margin: auto;
+    }
+  }
+
+}
+
+.list_user_about {
+  //border: solid 1px blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .item {
+    //border: solid 1px red;
+    width: 33.3333333%;
+    padding: 20px;
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+.list_contain_slogan {
+  .container {
+    overflow: hidden;
+  }
+}
