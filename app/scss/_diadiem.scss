@@ -1,21 +1,31 @@
 .bd-example {
-
-}
-.carousel_diadiem {
-  .icon_both_carousel {
-    position: absolute;
-    bottom: 100px;
-    max-width: 320px;
-    width: 100%;
-    left: 30px;
-    z-index: 9;
-    img {
-      display: block;
-      &:last-child {
-        float: right;
-      }
+  //border: solid 1px red;
+  .left_item {
+    width: 400px;
+    padding: 100px 40px 0px 40px;
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
     }
   }
+}
+.icon_both_carousel {
+  //position: absolute;
+  bottom: 100px;
+  max-width: 320px;
+  width: 100%;
+  left: 30px;
+  z-index: 9;
+  img {
+    display: block;
+    &:last-child {
+      float: right;
+    }
+  }
+}
+.carousel_diadiem {
+  //width: calc(100% - 400px);
+
   .carousel-item {
     color: #000;
     .carousel-caption {
@@ -27,7 +37,7 @@
     display: flex;
     align-items: center;
     .pic {
-      max-width: calc(100% - 400px);
+
       width: 100%;
       //transform: translateX();
       img {
@@ -39,11 +49,8 @@
       max-width: 400px;
       width: 100%;
       order: -1;
-      padding: 0px 40px 0px 40px;
-      h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
+
+
     }
   }
   .carousel-indicators {
@@ -53,7 +60,7 @@
     flex-direction: column;
     width: 26px;
     z-index: 9;
-    left: 440px;
+    left: 50px;
     top: 0px;
     margin: 0px;
     align-items: center;

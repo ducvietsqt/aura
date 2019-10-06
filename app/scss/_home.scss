@@ -332,3 +332,67 @@
   z-index: -1;
 
 }
+
+.box_animate_foo {
+  //border: solid 1px red;
+  position: absolute;
+  left: 0px;
+  bottom: 40px;
+  width: 35%;
+  z-index: 9;
+  .pos-relative {
+    overflow-x: hidden;
+    //border: solid 1px green;
+    height: 200px;
+    .mattroi_pic {
+      border: solid 1px blue;
+      position: absolute;
+      left: 30%;
+      //-webkit-animation-name: slideFoo;
+      //animation-name: slideFoo;
+      //animation-iteration-count: infinite;
+      //animation: slideFoo 4s infinite;
+      //animation-iteration-count: infinite;
+      //animation-duration: 20s;
+
+    }
+    .may1_pic, .may2_pic, .may3_pic, .may4_pic, .may5_pic {
+      position: absolute;
+      left: -10%;
+      top: 60px;
+      animation: slideFoo;
+      animation-iteration-count: infinite;
+    }
+    .may1_pic {
+      animation-duration: 18s;
+    }
+    .may2_pic {
+      animation-duration: 10s;
+    }
+    .may3_pic {
+      animation-duration: 18s;
+    }
+    .may4_pic {
+      animation-duration: 18s;
+    }
+    .may5_pic {
+      animation-duration: 18s;
+    }
+  }
+}
+
+
+@keyframes slideFoo {
+  from {
+    //-webkit-transform: translate3d(-100%, 0, 0);
+    //transform: translate3d(-100%, 0, 0);
+    left: -10%;
+    visibility: visible;
+  }
+
+  to {
+    //-webkit-transform: translate3d(0, 0, 0);
+    //transform: translate3d(400%, 0, 0);
+    left: 100%;
+  }
+}

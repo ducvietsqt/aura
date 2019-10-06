@@ -101,7 +101,7 @@
     background-image: url("../images/Eventroom_bg.png");
   }
   background-position: 50% 100%;
-  background-size: 100% 390px;
+  background-size: 110% 390px;
   background-repeat: no-repeat;
   //overflow: hidden;
   .carousel-img {
@@ -288,6 +288,8 @@
 
 .link_img--right {
   float: right;
+  width: 100px;
+  display: block;
 }
 
 .box_map {
