@@ -1,3 +1,10 @@
+.link_order_room {
+  display: block;
+  img {
+    max-width: 120px;
+    display: block;
+  }
+}
 .lan_top {
   //border: solid 1px red;
   text-align: right;
@@ -101,6 +108,8 @@
 
 .section {
   padding: 20px 0px;
+  position: relative;
+  z-index: 9;
 }
 
 .slogan_item {

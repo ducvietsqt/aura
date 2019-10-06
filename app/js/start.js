@@ -54,6 +54,9 @@ $(document).ready(function () {
                 $(crs).addClass('active_show');
             })
 
+            // parallax
+            // Accepts any class name
+            var rellax = new Rellax('.rellax');
         })
     })
 });
