@@ -21,7 +21,7 @@
 .topbar {
   //border: solid 1px red;
   position: relative;
-  z-index: 9;
+  z-index: 99;
   .topbar--container {
     //border: solid 1px blue;
     //display: flex;
@@ -50,18 +50,23 @@
     margin-right: 30px;
     position: relative;
      //border: solid 1px red;
+    width: 100px;
     .link_item {
       font-size: 19px;
       color: #231F20;
       padding: 10px;
       display: block;
+      font-size: 100%;
+      white-space: nowrap;
+      text-align: center;
       &:hover, &.active {
-
         color: #000000;
         background: #FFBB00;
       }
     }
+    //border: solid 1px red;
     &:hover {
+
       .submenu {
         opacity: 1;
       }
@@ -71,7 +76,6 @@
       top: 0px;
       right: 0px;
       opacity: 0;
-      //border: solid 1px red;
       background: url($tpatch_image + "bg-menu.png") no-repeat top left;
       width: 175px;
       height: 124px;
