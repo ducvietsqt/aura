@@ -313,12 +313,21 @@
   //border: solid 1px red;
   position: relative;
   padding: 100px 0px 0px 0px;
+  @media (max-width: 575px) {
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    background: #16b669;
+  }
  .img_mk {
    display: block;
    position: absolute;
    left: 0px;
    width: 45%;
    bottom: 0px;
+   @media (max-width: 575px) {
+     position: static;
+     margin-top: 50px;
+   }
  }
 }
 .social_foo {
@@ -345,8 +354,15 @@
 .item-info-foo {
   //border: solid 1px red;
   max-width: 340px;
+  @media (max-width: 575px) {
+    max-width: unset;
+    width: 100%;
+  }
   p:not(.social_foo) {
     font-size: 16px;
+    @media(max-width: 767px) {
+      font-size: 13px;
+    }
     &.text-white {
       margin-bottom: 10px;
     }
@@ -357,8 +373,19 @@
   background: #DDDDDD;
   height: 60px;
   line-height: 60px;
+  @media (max-width: 575px) {
+    line-height: unset;
+    height: auto;
+    padding: 20px 0px;
+  }
+  >div {
+    background: #DDDDDD;
+  }
   a {
     color: #000;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
   }
 }
 .abs_text {
@@ -377,10 +404,16 @@
   bottom: 40px;
   width: 35%;
   z-index: 9;
+  @media (max-width: 575px) {
+    width: 100%;
+  }
   .pos-relative {
     overflow-x: hidden;
     //border: solid 1px green;
     height: 200px;
+    @media (max-width: 767px) {
+      height: 100px;
+    }
     .mattroi_pic {
       border: solid 1px blue;
       position: absolute;
@@ -399,12 +432,19 @@
       top: 60px;
       animation: slideFoo;
       animation-iteration-count: infinite;
+
     }
     .may1_pic {
       animation-duration: 18s;
+      @media (max-width: 767px) {
+        width: 45px;
+      }
     }
     .may2_pic {
       animation-duration: 10s;
+      @media (max-width: 767px) {
+        width: 25px;
+      }
     }
     .may3_pic {
       animation-duration: 18s;
