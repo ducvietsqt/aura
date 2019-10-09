@@ -221,6 +221,9 @@
 
 
 .form_info_account {
+  //border: solid 1px red;
+  max-width: 640px;
+  width: 100%;
   .field_item {
     //border: solid 1px red;
     display: flex;
@@ -232,25 +235,30 @@
       width: 130px;
       margin: 0px;
     }
-    input[type=text] {
+    input[type=text], input[type=password] {
       display: block;
       outline: none !important;
       flex: 1;
       padding: 5px 10px;
-      border: solid 1px rgba(0,0,0,0.2) !important;
+      //border: solid 1px rgba(0,0,0,0.2) !important;
+      border: none;
+      background: #F0F1F1;
       height: 42px;
       border-radius: 4px;
+      font-size: 14px;
     }
     button {
       display: block;
       border: none;
       outline: none;
       cursor: pointer;
-      background: #FFBB00;
-      color: #000;
+      background: #00ADEE;
+      color: #ffffff;
       font-weight: bold;
-      padding: 5px 10px;
+      padding: 10px 20px;
       height: 42px;
+      border-radius: 21px;
+      font-size: 14px;
     }
     .field_item__group {
       flex: 1;
@@ -261,4 +269,30 @@
       }
     }
   }
+}
+.social_btn {
+  color: #ffffff !important;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  position: relative;
+  .fab {
+    margin-right: 10px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &.btn_facebook {
+    background: #3C5998;
+  }
+  &.btn_google {
+    background: #DF4A32;
+  }
+
+}
+
+.nav-tabs-auth {
+
 }

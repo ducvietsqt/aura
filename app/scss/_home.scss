@@ -3,6 +3,9 @@
   img {
     max-width: 120px;
     display: block;
+    @media (max-width: 991px) {
+      max-width: 80px;
+    }
   }
 }
 .lan_top {
@@ -29,6 +32,9 @@
     //justify-content: space-between;
     .logo {
       width: 188px;
+      @media (max-width: 991px) {
+        width: 120px;
+      }
       a, img {
         display: block;
         max-width: 100%;
@@ -51,6 +57,10 @@
     position: relative;
      //border: solid 1px red;
     width: 100px;
+    @media (max-width: 991px) {
+      margin-right: 10px;
+      width: 80px;
+    }
     .link_item {
       font-size: 19px;
       color: #231F20;
@@ -59,6 +69,9 @@
       font-size: 100%;
       white-space: nowrap;
       text-align: center;
+      @media(max-width: 991px) {
+        font-size: 75%;
+      }
       &:hover, &.active {
         color: #000000;
         background: #FFBB00;
@@ -80,15 +93,26 @@
       width: 175px;
       height: 124px;
       padding: 30px 30px 0px 10px;
+      @media(max-width: 991px) {
+        width: 125px;
+        height: 84px;
+        background-size: 100%;
+        padding-top: 20px;
+      }
       li {
         //border: solid 1px blue;
         text-align: right;
         margin-bottom: 5px;
+        @media(max-width: 991px) {
+          font-size: 12px;
+          margin-bottom: 0px;
+        }
         &:first-child {
           border-bottom: solid 1px #231F20;
         }
         a {
           color: #231F20;
+
           &:hover, &.active {
             color: #FFFFFF;
           }
