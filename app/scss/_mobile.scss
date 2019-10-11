@@ -47,3 +47,17 @@
     font-size: 18px;
   }
 }
+
+.rellax {
+  @include for-tablet-only {
+    max-width: 430px;
+  }
+  @include for-phone-only {
+    max-width: 260px;
+  }
+}
+
+.navbar-collapse  {
+  background: #ffffff;
+  padding: 10px 10px;
+}

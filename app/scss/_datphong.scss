@@ -30,9 +30,15 @@
 }
 .section_content_date {
   display: flex;
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
   .left_form {
     max-width: 430px;
     width: 100%;
+    @include for-tablet-only {
+      max-width: unset;
+    }
 
   }
   .right_info {

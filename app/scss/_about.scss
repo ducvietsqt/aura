@@ -28,14 +28,18 @@
 .content_about_slogan {
   //border: solid 1px red;
   width: 1170px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
   .text-top {
     text-align: center;
     display: block;
     font-size: 30px;
     transform: translateY(100px);
+    @include for-tablet-only {
+      transform: unset;
+    }
   }
   .img-content {
     display: block;
@@ -44,6 +48,9 @@
     //border: solid 1px red;
     width: 400px;
     position: absolute;
+    @include for-tablet-only {
+      position: static;
+    }
     &.left {
       top: 500px;
       left: 0px;

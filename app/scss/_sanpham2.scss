@@ -94,6 +94,9 @@
     border-bottom: solid 2px #000000;
     cursor: pointer;
     -webkit-appearance: none;
+    @media (max-width: 767px) {
+      padding: 0px 0px !important;
+    }
     &[aria-expanded="true"] {
       span {
         background: #FFBB00;
@@ -107,6 +110,9 @@
       display: block;
       padding: 10px;
       font-size: 22px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -175,6 +181,13 @@
       color: #000;
       transform: rotate(0deg);
       //transition: all 0.25s linear;
+      @include for-phone-only {
+        font-size: 16px;
+        img {
+          display: block;
+          width: 15px;
+        }
+      }
       &[aria-expanded="true"] {
         img {
           transform: rotate(90deg);
