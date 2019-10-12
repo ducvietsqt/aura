@@ -43,9 +43,15 @@
     //border: solid 1px red;
     .name {
       font-size: 30px;
+      @include for-767-only {
+        font-size: 20px;
+      }
     }
     .drs {
       font-size: 16px;
+      @include for-phone-only {
+        font-size: 14px;
+      }
     }
     .link_outline {
       border: solid 2px #000000;
@@ -54,6 +60,9 @@
       display: inline-flex;
       justify-content: space-between;
       align-items: center;
+      @include for-767-only {
+        font-size: 14px;
+      }
       img {
         margin-left: 10px;
         display: block;
@@ -68,6 +77,10 @@
       color: #000;
       padding: 5px 0px;
       display: inline-flex;
+
+      @include for-767-only {
+        font-size: 14px;
+      }
 
     }
   }

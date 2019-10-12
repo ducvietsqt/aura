@@ -1,8 +1,23 @@
 .bd-example {
   //border: solid 1px red;
+  @include for-tablet-only {
+    max-width: 720px;
+    //border: solid 1px red;
+    padding: 0px 15px;
+    margin: 0 auto;
+  }
+  @media (max-width: 767px) {
+    max-width: 540px;
+  }
   .left_item {
     width: 400px;
     padding: 100px 40px 0px 40px;
+    @include for-tablet-only {
+      padding: 100px 10px 0px 10px;
+    }
+    @media (max-width: 767px) {
+      padding: 20px 10px 0px 10px;
+    }
     h2 {
       font-size: 36px;
       margin-bottom: 20px;
@@ -65,6 +80,13 @@
     margin: 0px;
     align-items: center;
     justify-content: center;
+    @include for-tablet-only {
+      position: static;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+    }
+
     li {
       display: block;
       clear: both;
@@ -75,6 +97,9 @@
       border-radius: 100%;
       &:last-child {
         margin-bottom: 0px;
+        @include for-tablet-only {
+          margin-bottom: 10px;
+        }
       }
       &.active {
         background: #00ADEE;

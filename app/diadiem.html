@@ -38,11 +38,11 @@
 <script src="js/start.js"></script>
 <!-- endbuild -->
 
-<div class="rellax" data-rellax-speed="-10" style="position:absolute; left: 0px; top: -50px; z-index: 0;">
+<div class="rellax" data-rellax-speed="-6" style="position:absolute; left: 0px; top: -50px; z-index: 0;">
     <img src="images/Asset%20orange.png" alt=""/>
 </div>
 <div id="page">
-    <div class="container">
+    <div class="container isDesktop">
         <div class="lan_top">
             <a href="#" class="lan_item">en</a>
             <a href="#" class="lan_item">vi</a>
@@ -51,50 +51,97 @@
 
     <div class="topbar">
         <div class="container">
-            <div class="d-flex justify-content-between topbar--container">
-                <h1 class="logo flex-shrink-1" style="position:relative; z-index: 1;">
-                    <a href="#">
+            <div class="isDesktop">
+                <div class="d-flex justify-content-between topbar--container">
+                    <h1 class="logo flex-shrink-1">
+                        <a href="#">
+                            <img src="images/Logo.png" alt=""/>
+                        </a>
+                    </h1>
+                    <div class="d-flex nav_right">
+                        <ul class="d-flex align-items-center list-nav-menu">
+                            <li class="nav_item">
+                                <a href="#" class="link_item">
+                                    Dịch vụ
+                                </a>
+                                <ul class="submenu">
+                                    <li>
+                                        dịch vụ
+                                    </li>
+                                    <li>
+                                        <a class="active" href="#">Co-Living</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Co-working
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="link_item">Địa điểm</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="link_item">Thành viên</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="link_item">Về Aura</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link_order_room" data-toggle="modal" data-target="#exampleModalLong">
+                                    <!--Đặt Phòng-->
+                                    <img src="images/btn_dp.png" alt=""/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="isMobile">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile px-0">
+                    <a class="navbar-brand" href="#">
                         <img src="images/Logo.png" alt=""/>
                     </a>
-                </h1>
+                    <div class="d-flex align-items-center">
+                        <div class="mr-4">
+                            <div class="lan_top">
+                                <a href="#" class="lan_item">en</a>
+                                <a href="#" class="lan_item">vi</a>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dịch vụ
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Co-Living</a>
+                                    <a class="dropdown-item" href="#">Co-Working</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Địa điểm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Thành viên</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Về Aura</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a class="link_order_room" href="#">
+                                Đặt phòng <img src="images/arr_link.png" alt="">
+                            </a>
+                        </div>
 
-                <div class="d-flex nav_right">
-                    <ul class="d-flex align-items-center list-nav-menu">
-                        <li class="nav_item">
-                            <a href="#" class="link_item">
-                                Dịch vụ
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    dịch vụ
-                                </li>
-                                <li>
-                                    <a class="active" href="#">Co-Living</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Co-working
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#" class="link_item">Địa điểm</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#" class="link_item">Thành viên</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#" class="link_item">Về Aura</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link_order_room">
-                                <!--Đặt Phòng-->
-                                <img src="images/btn_dp.png" alt=""/>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
@@ -143,7 +190,7 @@
                 Aura đang có mặt ở
             </h2>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                     <div class="box-coming item">
                         <div class="img">
                             <img src="images/dist1.png" alt=""/>
@@ -160,7 +207,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 disabled">
+                <div class="col-12 col-sm-4 disabled">
                     <div class="box-coming item">
                         <div class="img">
                             <img src="images/dist1.png" alt=""/>
@@ -177,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 disabled">
+                <div class="col-12 col-sm-4 disabled">
                     <div class="box-coming item">
                         <div class="img">
                             <img src="images/dist1.png" alt=""/>
@@ -201,8 +248,8 @@
 
     <div class="section pt-5 mt-5">
         <div class="bd-example">
-            <div class="d-flex justify-content-between">
-                <div class="left_item">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap">
+                <div class="left_item order-2 order-md-1">
                     <div class="text-left">
                         <h2>Aura <br/>
                             Him Lam</h2>
@@ -219,12 +266,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="carousel_diadiem_09" class="carousel carousel_diadiem slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel_diadiem_09" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel_diadiem_09" data-slide-to="1"></li>
-                        <li data-target="#carousel_diadiem_09" data-slide-to="2"></li>
-                    </ol>
+                <div id="carousel_diadiem_09" class="carousel carousel_diadiem slide order-1 order-md-2" data-ride="carousel">
+
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="content_carousel_diadiem">
@@ -248,7 +291,11 @@
                             </div>
                         </div>
                     </div>
-
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel_diadiem_09" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel_diadiem_09" data-slide-to="1"></li>
+                        <li data-target="#carousel_diadiem_09" data-slide-to="2"></li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -268,12 +315,22 @@
         </div>
     </div>
     <div class="footer_page">
-        <img class="img_mk" src="images/Asset 90.png" alt=""/>
+        <!--<img class="img_mk" src="images/Asset 90.png" alt=""/>-->
+
+        <div class="box_animate_foo">
+            <div class="pos-relative">
+                <img class="may1_pic" src="images/may1.png" alt=""/>
+                <img class="may2_pic" src="images/may2.png" alt=""/>
+                <!--<img class="may3_pic" src="images/may2.png" alt=""/>-->
+                <!--<img class="may4_pic" src="images/may2.png" alt=""/>-->
+                <!--<img class="may5_pic" src="images/may2.png" alt=""/>-->
+            </div>
+        </div>
         <div class="container">
             <div class="d-flex">
                 <div class="ml-auto">
-                    <div class="d-flex">
-                        <div class="item item-info-foo px-3">
+                    <div class="d-flex flex-wrap">
+                        <div class="item item-info-foo px-3 pb-3">
                             <p class="d-flex align-items-center social_foo hidden">
                                 <a href="#" class="text-white fab fa-youtube"></a>
                                 <a href="#" class="text-white fab fa-instagram"></a>
@@ -283,25 +340,25 @@
                                 Về chúng tôi
                             </p>
                             <p>
-                                dịch vụ
+                                <a class="link_foo" href="#">dịch vụ</a>
                             </p>
                             <p>
-                                > Co-working
+                                <a class="link_foo" href="#">> Co-working</a>
                             </p>
                             <p>
-                                > Co-livings
+                                <a class="link_foo" href="#">> Co-livings</a>
                             </p>
                             <p>
-                                địa điểm
+                                <a class="link_foo" href="#">địa điểm</a>
                             </p>
                             <p>
-                                thành viên
+                                <a class="link_foo" href="#">thành viên</a>
                             </p>
                             <p>
-                                giới thiệu
+                                <a class="link_foo" href="#">giới thiệu</a>
                             </p>
                         </div>
-                        <div class="item item-info-foo px-3">
+                        <div class="item item-info-foo px-3 pb-3">
                             <p class="d-flex align-items-center social_foo">
                                 <a href="#" class="text-white fab fa-youtube ml-0"></a>
                                 <a href="#" class="text-white fab fa-instagram"></a>
@@ -324,10 +381,11 @@
                 </div>
             </div>
         </div>
+        <img class="img_mk" src="images/footer3.png" alt=""/>
     </div>
     <div class="foot_bar">
         <div class="px-3">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex flex-wrap justify-content-between">
                 <div>
                     <a href="#">
                         Powered by Aura District 2019
@@ -336,10 +394,7 @@
                 </div>
                 <div>
                     <a href="#" class="mx-2">
-                        Về
-                    </a>
-                    <a href="#" class="mx-2">
-                        Cookie Policy
+                        Về Cookie Policy
                     </a>
                     <a href="#" class="mx-2">
                         404

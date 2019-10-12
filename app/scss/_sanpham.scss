@@ -1,6 +1,9 @@
 .bg_bn {
   float: right;
   max-width: none;
+  @include for-phone-only {
+    max-height: 400px;
+  }
 }
 
 .banner_sanpham {
@@ -21,17 +24,30 @@
   }
   @include for-phone-only {
     top: 80px;
+
+    top: 60px;
+    //border: solid 1px red;
+    width: 200px;
   }
   .title {
     font-size: 34px;
     @include for-tablet-only {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
   .drs {
     font-size: 16px;
     color: #ffffff;
-    width: 244px;
+    max-width: 244px;
+    @include for-phone-only {
+      font-size: 14px;
+      max-width: 230px;
+    }
+  }
+  h3 {
+    @include for-phone-only {
+      font-size: 18px;
+    }
   }
   .link {
     img {

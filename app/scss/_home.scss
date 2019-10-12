@@ -277,7 +277,7 @@
       width: 70%;
       float: right;
       clear: both;
-      @media (max-width: 575px) {
+      @media (max-width: 991px) {
         width: 100%;
         float: left;
       }
@@ -286,6 +286,9 @@
       font-size: 20px;
       color: #231F20;
       border-bottom: solid 2px #231F20;
+      @include for-phone-only {
+        font-size: 14px;
+      }
 
     }
     .link_list {
@@ -296,6 +299,9 @@
       a {
         font-size: 20px;
         color: #231F20 !important;
+        @include for-phone-only {
+          font-size: 14px;
+        }
 
       }
     }
@@ -306,7 +312,7 @@
         max-width: 65%;
 
         @include for-phone-only {
-          max-width: 45%;
+          max-width: 120px;
         }
       }
     }
@@ -327,6 +333,13 @@
   }
   p {
     font-size: 16px;
+  }
+}
+.contain_subscribe {
+  h2 {
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
   }
 }
 .contain_subscribe--form {
