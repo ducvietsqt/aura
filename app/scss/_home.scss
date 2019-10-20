@@ -384,10 +384,14 @@
   //border: solid 1px red;
   position: relative;
   padding: 100px 0px 0px 0px;
-  @media (max-width: 575px) {
-    height: auto;
+  @include for-phone-only {
     padding: 0px 0px 0px 0px;
-    background: #16b669;
+    background-image: url($tpatch_image + "bg_foo copy.png");
+    background-position: 0% 100%;
+  }
+  @media (max-width: 575px) {
+
+    //background: #16b669;
   }
  .img_mk {
    display: block;
@@ -396,8 +400,9 @@
    width: 45%;
    bottom: 0px;
    @media (max-width: 575px) {
-     position: static;
-     margin-top: 50px;
+     //position: static;
+     //margin-top: 50px;
+     width: auto;
    }
  }
 }
@@ -428,16 +433,30 @@
   @media (max-width: 575px) {
     max-width: unset;
     width: 100%;
+    text-align: right;
   }
   p:not(.social_foo) {
     font-size: 16px;
     @media(max-width: 767px) {
-      font-size: 13px;
+      font-size: 12px;
+      margin-bottom: 0px;
     }
     &.text-white {
       margin-bottom: 10px;
+      @media(max-width: 767px) {
+        margin-bottom: 0px;
+      }
     }
   }
+  .social_foo {
+    &.hidden {
+      display: none !important;
+    }
+    @media (max-width: 767px) {
+      justify-content: flex-end;
+    }
+  }
+
 }
 
 .foot_bar {
@@ -550,5 +569,14 @@
     //-webkit-transform: translate3d(0, 0, 0);
     //transform: translate3d(400%, 0, 0);
     left: 100%;
+  }
+}
+
+.details-mobile {
+  //border: solid 1px red;
+  width: 300px;
+  text-align: right;
+  p, a, .link_foo {
+    font-size: 12px;
   }
 }

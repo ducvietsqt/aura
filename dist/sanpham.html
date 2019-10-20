@@ -34,7 +34,7 @@
 <script src="js/rellax.min.js"></script>
 <script src="js/start.js"></script>
 
-<div class="rellax" data-rellax-speed="-6" style="position:absolute; left: 0px; top: -50px; z-index: 0;">
+<div class="rellax" data-rellax-speed="-4" style="position:absolute; left: 0px; top: -50px; z-index: 0;">
     <img src="images/bg_fixed.png" alt=""/>
 </div>
 <div id="page">
@@ -105,14 +105,17 @@
                                 <a href="#" class="lan_item">vi</a>
                             </div>
                         </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Dịch vụ
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -168,29 +171,61 @@
         <h2 class="text-center mb-5">
             Co-working ở Aura có gì?
         </h2>
-        <div class="box_center_link">
-            <div class="contain_banner_link mr-4">
-                <div class="links_box">
-                    <a href="#" class="item">
-                        Co-working space
-                        <img src="images/arr_link.png" alt=""/>
-                    </a>
-                    <a href="#" class="item mb-4">
-                        Event space
-                        <img src="images/arr_link.png" alt=""/>
-                    </a>
-                    <div class="d-flex justify-content-end">
-                        <a href="" class="link_box mb-4">
-                            đặt phòng <img src="images/arr_link.png" width="25" alt=""/>
+        <div class="isDesktop">
+            <div class="box_center_link">
+                <div class="contain_banner_link mr-4">
+                    <div class="links_box">
+                        <a href="#" class="item">
+                            Co-working space
+                            <img src="images/arr_link.png" alt=""/>
                         </a>
+                        <a href="#" class="item mb-4">
+                            Event space
+                            <img src="images/arr_link.png" alt=""/>
+                        </a>
+                        <div class="d-flex justify-content-end">
+                            <a href="" class="link_box mb-4">
+                                đặt phòng <img src="images/arr_link.png" width="25" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <img class="img_right" src="images/Asset 86.png" alt=""/>
+            </div>
+        </div>
+        <div class="container isMobile">
+            <div class="box_links_sp1">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">
+                            Co-working space <img src="images/arr_link.png" alt=""/>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu1">
+                            Event space <img src="images/arr_link.png" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active">
+                        <div class="py-2">
+                            <img class="d-block mx-auto" src="images/Asset 86.png" alt="">
+                        </div>
+                    </div>
+                    <div id="menu1" class="container tab-pane fade">
+                        <div class="py-2">
+                            <img class="d-block mx-auto" src="images/Asset 86.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-            <img class="img_right" src="images/Asset 86.png" alt=""/>
         </div>
     </div>
     <div class="section">
-        <h2 class="text-center mt-5 mb-5">
+        <h2 class="text-center mt-sm-5 mb-sm-5">
             Các gói phòng working
         </h2>
         <div id="carouselExampleIndicators1" class="carousel carousel-working orange slide" data-ride="carousel">
@@ -279,178 +314,118 @@
         </div>
     </div>
     <div class="section">
-        <h2 class="text-center mt-5 mb-5">
+        <h2 class="text-center mt-sm-5 mb-sm-5">
             Các gói phòng event
         </h2>
-        <div class="carousel_content">
-            <div class="lef_img">
-                <div id="carousel-home1" class="carousel carousel-working carousel-even slide carousel-even--active" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-home1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-home1" data-slide-to="1"></li>
-                        <li data-target="#carousel-home1" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner  animated fadeInLeftBig">
-                        <div class="carousel-item active">
-                            <div class="carousel-img">
-                                <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+        <div class="isDesktop">
+            <div class="carousel_content">
+                <div class="lef_img">
+                    <div id="carousel-home1" class="carousel carousel-working carousel-even slide carousel-even--active"
+                         data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-home1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-home1" data-slide-to="1"></li>
+                            <li data-target="#carousel-home1" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner  animated fadeInLeftBig">
+                            <div class="carousel-item active">
+                                <div class="carousel-img">
+                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-img">
-                                <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                            <div class="carousel-item">
+                                <div class="carousel-img">
+                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-img">
-                                <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="carousel-home2" class="carousel carousel-working carousel-even slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-home2" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-home2" data-slide-to="1"></li>
-                        <li data-target="#carousel-home2" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner animated bounceInUp">
-                        <div class="carousel-item active">
-                            <div class="carousel-img">
-                                <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-img">
-                                <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-img">
-                                <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                            <div class="carousel-item">
+                                <div class="carousel-img">
+                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div id="carousel-home2" class="carousel carousel-working carousel-even slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-home2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-home2" data-slide-to="1"></li>
+                            <li data-target="#carousel-home2" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner animated bounceInUp">
+                            <div class="carousel-item active">
+                                <div class="carousel-img">
+                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-img">
+                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-img">
+                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <div class="right_tab">
+                    <div class="carousel-caption carousel-caption--working">
+                        <div class="banner_caption">
+                            <ul class="nav nav-tabs nav-tabs-aura" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link nav-tab-product active"
+                                       id="home1-tab"
+                                       data-toggle="tab"
+                                       href="#home1"
+                                       role="tab"
+                                       aria-controls="home1"
+                                       aria-selected="true"
+                                       data-carousel="carousel-home1">
+                                        <span>Aura Him Lam</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-tab-product"
+                                       id="home2-tab"
+                                       data-toggle="tab"
+                                       href="#home2"
+                                       role="tab"
+                                       aria-controls="home2"
+                                       aria-selected="false"
+                                       data-carousel="carousel-home2">
+                                        <span>Aura Thủ Đức</span>
+                                    </a>
+                                </li>
 
-            </div>
-            <div class="right_tab">
-                <div class="carousel-caption carousel-caption--working">
-                    <div class="banner_caption">
-                        <ul class="nav nav-tabs nav-tabs-aura" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link nav-tab-product active"
-                                   id="home1-tab"
-                                   data-toggle="tab"
-                                   href="#home1"
-                                   role="tab"
-                                   aria-controls="home1"
-                                   aria-selected="true"
-                                   data-carousel="carousel-home1">
-                                    <span>Aura Him Lam</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-tab-product"
-                                   id="home2-tab"
-                                   data-toggle="tab"
-                                   href="#home2"
-                                   role="tab"
-                                   aria-controls="home2"
-                                   aria-selected="false"
-                                   data-carousel="carousel-home2">
-                                    <span>Aura Thủ Đức</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                        <div class="tab-content tab-content-aura" id="myTabContent">
-                            <div class="tab-pane fade show active"
-                                 id="home1"
-                                 role="tabpanel"
-                                 aria-labelledby="home1-tab">
-                                <p class="address_text text-left mt-3 mb-3">
-                                    Số 1 - 3, đường D4, KDC Him Lam, P.Tân Hưng, <br/> Quận 7, TPHCM, Việt Nam.
-                                </p>
-                                <div class="bor-line-both pt-5 pb-2 mb-2">
+                            </ul>
+                            <div class="tab-content tab-content-aura" id="myTabContent">
+                                <div class="tab-pane fade show active"
+                                     id="home1"
+                                     role="tabpanel"
+                                     aria-labelledby="home1-tab">
+                                    <p class="address_text text-left mt-3 mb-3">
+                                        Số 1 - 3, đường D4, KDC Him Lam, P.Tân Hưng, <br/> Quận 7, TPHCM, Việt Nam.
+                                    </p>
+                                    <div class="bor-line-both pt-5 pb-2 mb-2">
+                                        <div class="row text-left">
+                                            <div class="col-sm-6">
+                                                <h3 class="text-size-daihan">Ở dài hạn</h3>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                Các dịch vụ
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="row text-left">
                                         <div class="col-sm-6">
-                                            <h3 class="text-size-daihan">Ở dài hạn</h3>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            Các dịch vụ
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row text-left">
-                                    <div class="col-sm-6">
-                                        <p class="info_title">12 tháng: 12,000,000 đ</p>
-                                        <p class="info_title">6 tháng : 2,000,000 đ</p>
-                                        <p class="info_title">3 tháng: 500,000 đ</p>
-                                        <p class="info_title">1 tháng: 200,000 đ</p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="box-list-dichvu">
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu1.png" alt=""/>
-                                                <p>
-                                                    nhà hàng, <br/>
-                                                    quầy ăn/uống
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_dondep.png" alt=""/>
-                                                <p>
-                                                    dọn dẹp
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_khonggian.png" alt=""/>
-                                                <p>
-                                                    không gian <br/>
-                                                    co-working
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_khonggian.png" alt=""/>
-                                                <p>
-                                                    không gian <br/>
-                                                    co-living
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_dauxe.png" alt=""/>
-                                                <p>
-                                                    đậu xe
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_khochothue.png" alt=""/>
-                                                <p>
-                                                    kho cho thuê
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_khoahoc.png" alt=""/>
-                                                <p>
-                                                    khoá học đặc biệt <br/>
-                                                    buổi chia sẻ
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bor-y">
-                                    <div class="row">
-                                        <div class="col-sm-6 text-left">
-                                            <h4 class="text-size-daihan">Ở ngắn hạn</h4>
-                                            <p class="info_title">
-                                                1-89 ngày
-                                            </p>
-                                            <p class="info_title">
-                                                200,000 <sup>đ/ngày</sup>
-                                            </p>
+                                            <p class="info_title">12 tháng: 12,000,000 đ</p>
+                                            <p class="info_title">6 tháng : 2,000,000 đ</p>
+                                            <p class="info_title">3 tháng: 500,000 đ</p>
+                                            <p class="info_title">1 tháng: 200,000 đ</p>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="box-list-dichvu">
@@ -474,133 +449,545 @@
                                                         co-working
                                                     </p>
                                                 </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_khonggian.png" alt=""/>
+                                                    <p>
+                                                        không gian <br/>
+                                                        co-living
+                                                    </p>
+                                                </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_dauxe.png" alt=""/>
+                                                    <p>
+                                                        đậu xe
+                                                    </p>
+                                                </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_khochothue.png" alt=""/>
+                                                    <p>
+                                                        kho cho thuê
+                                                    </p>
+                                                </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_khoahoc.png" alt=""/>
+                                                    <p>
+                                                        khoá học đặc biệt <br/>
+                                                        buổi chia sẻ
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="bor-y">
+                                        <div class="row">
+                                            <div class="col-sm-6 text-left">
+                                                <h4 class="text-size-daihan">Ở ngắn hạn</h4>
+                                                <p class="info_title">
+                                                    1-89 ngày
+                                                </p>
+                                                <p class="info_title">
+                                                    200,000 <sup>đ/ngày</sup>
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="box-list-dichvu">
+                                                    <div class="box_small_dichvu">
+                                                        <img src="images/dichvu1.png" alt=""/>
+                                                        <p>
+                                                            nhà hàng, <br/>
+                                                            quầy ăn/uống
+                                                        </p>
+                                                    </div>
+                                                    <div class="box_small_dichvu">
+                                                        <img src="images/dichvu_dondep.png" alt=""/>
+                                                        <p>
+                                                            dọn dẹp
+                                                        </p>
+                                                    </div>
+                                                    <div class="box_small_dichvu">
+                                                        <img src="images/dichvu_khonggian.png" alt=""/>
+                                                        <p>
+                                                            không gian <br/>
+                                                            co-working
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6"></div>
+                                        <div class="col-6 text-right">
+                                            <a href="#" class="link_img link_img--right">
+                                                <img src="images/btn_datphong.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6"></div>
-                                    <div class="col-6 text-right">
-                                        <a href="#" class="link_img link_img--right">
-                                            <img src="images/btn_datphong.png" alt=""/>
+                                <div class="tab-pane fade" id="home2" role="tabpanel" aria-labelledby="home2-tab">
+                                    <p class="address_text text-left mt-3 mb-3">
+                                        Số 1 - 3, đường D4, KDC Him Lam, P.Tân Hưng, <br/> Quận 7, TPHCM, Việt Nam.
+                                    </p>
+                                    <div class="bor-line-both pt-5 pb-2 mb-2">
+                                        <div class="row text-left">
+                                            <div class="col-sm-6">
+                                                <h3 class="text-size-daihan">Ở dài hạn</h3>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                Các dịch vụ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-sm-6">
+                                            <p class="info_title">12 tháng: 12,000,000 đ</p>
+                                            <p class="info_title">6 tháng : 2,000,000 đ</p>
+                                            <p class="info_title">3 tháng: 500,000 đ</p>
+                                            <p class="info_title">1 tháng: 200,000 đ</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="box-list-dichvu">
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu1.png" alt=""/>
+                                                    <p>
+                                                        nhà hàng, <br/>
+                                                        quầy ăn/uống
+                                                    </p>
+                                                </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_dondep.png" alt=""/>
+                                                    <p>
+                                                        dọn dẹp
+                                                    </p>
+                                                </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_khonggian.png" alt=""/>
+                                                    <p>
+                                                        không gian <br/>
+                                                        co-working
+                                                    </p>
+                                                </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_khonggian.png" alt=""/>
+                                                    <p>
+                                                        không gian <br/>
+                                                        co-living
+                                                    </p>
+                                                </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_dauxe.png" alt=""/>
+                                                    <p>
+                                                        đậu xe
+                                                    </p>
+                                                </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_khochothue.png" alt=""/>
+                                                    <p>
+                                                        kho cho thuê
+                                                    </p>
+                                                </div>
+                                                <div class="box_small_dichvu">
+                                                    <img src="images/dichvu_khoahoc.png" alt=""/>
+                                                    <p>
+                                                        khoá học đặc biệt <br/>
+                                                        buổi chia sẻ
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bor-y">
+                                        <div class="row">
+                                            <div class="col-sm-6 text-left">
+                                                <h4 class="text-size-daihan">Ở ngắn hạn</h4>
+                                                <p class="info_title">
+                                                    1-89 ngày
+                                                </p>
+                                                <p class="info_title">
+                                                    200,000 <sup>đ/ngày</sup>
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="box-list-dichvu">
+                                                    <div class="box_small_dichvu">
+                                                        <img src="images/dichvu1.png" alt=""/>
+                                                        <p>
+                                                            nhà hàng, <br/>
+                                                            quầy ăn/uống
+                                                        </p>
+                                                    </div>
+                                                    <div class="box_small_dichvu">
+                                                        <img src="images/dichvu_dondep.png" alt=""/>
+                                                        <p>
+                                                            dọn dẹp
+                                                        </p>
+                                                    </div>
+                                                    <div class="box_small_dichvu">
+                                                        <img src="images/dichvu_khonggian.png" alt=""/>
+                                                        <p>
+                                                            không gian <br/>
+                                                            co-working
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6"></div>
+                                        <div class="col-6 text-right">
+                                            <a href="#" class="link_img link_img--right">
+                                                <img src="images/btn_datphong.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="isMobile">
+            <div class="carousel_content">
+                <div class="right_tab">
+                    <div class="carousel-caption carousel-caption--working">
+                        <div class="banner_caption">
+                            <ul class="nav nav-tabs nav-tabs-aura" id="myTab-mobile" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link nav-tab-product active"
+                                       id="home1-mobile-tab"
+                                       data-toggle="tab"
+                                       href="#home1-mobile"
+                                       role="tab"
+                                       aria-controls="home1-mobile"
+                                       aria-selected="true"
+                                       data-carousel="carousel-home1-mobile">
+                                        <span>Aura Him Lam</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-tab-product"
+                                       id="home2-mobile-tab"
+                                       data-toggle="tab"
+                                       href="#home2-mobile"
+                                       role="tab"
+                                       aria-controls="home2-mobile"
+                                       aria-selected="false"
+                                       data-carousel="carousel-home-mobile-2">
+                                        <span>Aura Thủ Đức</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content tab-content-aura" id="myTabContent-mobile">
+                                <div class="tab-pane fade show active"
+                                     id="home1-mobile"
+                                     role="tabpanel"
+                                     aria-labelledby="home1-mobile-tab">
+                                    <p class="address_text text-left mt-3 mb-3">
+                                        Số 1 - 3, đường D4, KDC Him Lam, P.Tân Hưng, <br/> Quận 7, TPHCM, Việt Nam.
+                                    </p>
+                                    <div id="carousel-home-mobile-1"
+                                         class="carousel carousel-working carousel-even slide carousel-even--active"
+                                         data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-home-mobile-1" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-home-mobile-1" data-slide-to="1"></li>
+                                            <li data-target="#carousel-home-mobile-1" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner  animated fadeInLeftBig">
+                                            <div class="carousel-item active">
+                                                <div class="carousel-img">
+                                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="carousel-img">
+                                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="carousel-img">
+                                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p data-toggle="collapse" class="collapse_link_btn"
+                                       href="#collapseExample-1"
+                                       role="button"
+                                       aria-expanded="false"
+                                       aria-controls="collapseExample-1">
+                                        <span>xem bảng giá</span>
+                                        <img src="images/arr_link.png" alt=""/>
+                                    </p>
+                                    <div class="collapse collapse_mobile" id="collapseExample-1">
+                                        <div class="p-4">
+                                            <div class="bor-line-both pt-5 pb-2 mb-2">
+                                                <div class="row text-left">
+                                                    <div class="col-sm-6">
+                                                        <h3 class="text-size-daihan">Ở dài hạn</h3>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        Các dịch vụ
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row text-left">
+                                                <div class="col-sm-6">
+                                                    <p class="info_title">12 tháng: 12,000,000 đ</p>
+                                                    <p class="info_title">6 tháng : 2,000,000 đ</p>
+                                                    <p class="info_title">3 tháng: 500,000 đ</p>
+                                                    <p class="info_title">1 tháng: 200,000 đ</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="box-list-dichvu">
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu1.png" alt=""/>
+                                                            <p>
+                                                                nhà hàng, <br/>
+                                                                quầy ăn/uống
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_dondep.png" alt=""/>
+                                                            <p>
+                                                                dọn dẹp
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_khonggian.png" alt=""/>
+                                                            <p>
+                                                                không gian <br/>
+                                                                co-working
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_khonggian.png" alt=""/>
+                                                            <p>
+                                                                không gian <br/>
+                                                                co-living
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_dauxe.png" alt=""/>
+                                                            <p>
+                                                                đậu xe
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_khochothue.png" alt=""/>
+                                                            <p>
+                                                                kho cho thuê
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_khoahoc.png" alt=""/>
+                                                            <p>
+                                                                khoá học đặc biệt <br/>
+                                                                buổi chia sẻ
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bor-y">
+                                                <div class="row">
+                                                    <div class="col-sm-6 text-left">
+                                                        <h4 class="text-size-daihan">Ở ngắn hạn</h4>
+                                                        <p class="info_title">
+                                                            1-89 ngày
+                                                        </p>
+                                                        <p class="info_title">
+                                                            200,000 <sup>đ/ngày</sup>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="box-list-dichvu">
+                                                            <div class="box_small_dichvu">
+                                                                <img src="images/dichvu1.png" alt=""/>
+                                                                <p>
+                                                                    nhà hàng, <br/>
+                                                                    quầy ăn/uống
+                                                                </p>
+                                                            </div>
+                                                            <div class="box_small_dichvu">
+                                                                <img src="images/dichvu_dondep.png" alt=""/>
+                                                                <p>
+                                                                    dọn dẹp
+                                                                </p>
+                                                            </div>
+                                                            <div class="box_small_dichvu">
+                                                                <img src="images/dichvu_khonggian.png" alt=""/>
+                                                                <p>
+                                                                    không gian <br/>
+                                                                    co-working
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center w-100 mt-3">
+                                        <a href="#" class="link_img">
+                                            <img src="images/btn_datphong.png" width="100" class="mx-auto" alt=""/>
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="home2" role="tabpanel" aria-labelledby="home2-tab">
-                                <p class="address_text text-left mt-3 mb-3">
-                                    Số 1 - 3, đường D4, KDC Him Lam, P.Tân Hưng, <br/> Quận 7, TPHCM, Việt Nam.
-                                </p>
-                                <div class="bor-line-both pt-5 pb-2 mb-2">
-                                    <div class="row text-left">
-                                        <div class="col-sm-6">
-                                            <h3 class="text-size-daihan">Ở dài hạn</h3>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            Các dịch vụ
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row text-left">
-                                    <div class="col-sm-6">
-                                        <p class="info_title">12 tháng: 12,000,000 đ</p>
-                                        <p class="info_title">6 tháng : 2,000,000 đ</p>
-                                        <p class="info_title">3 tháng: 500,000 đ</p>
-                                        <p class="info_title">1 tháng: 200,000 đ</p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="box-list-dichvu">
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu1.png" alt=""/>
-                                                <p>
-                                                    nhà hàng, <br/>
-                                                    quầy ăn/uống
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_dondep.png" alt=""/>
-                                                <p>
-                                                    dọn dẹp
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_khonggian.png" alt=""/>
-                                                <p>
-                                                    không gian <br/>
-                                                    co-working
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_khonggian.png" alt=""/>
-                                                <p>
-                                                    không gian <br/>
-                                                    co-living
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_dauxe.png" alt=""/>
-                                                <p>
-                                                    đậu xe
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_khochothue.png" alt=""/>
-                                                <p>
-                                                    kho cho thuê
-                                                </p>
-                                            </div>
-                                            <div class="box_small_dichvu">
-                                                <img src="images/dichvu_khoahoc.png" alt=""/>
-                                                <p>
-                                                    khoá học đặc biệt <br/>
-                                                    buổi chia sẻ
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bor-y">
-                                    <div class="row">
-                                        <div class="col-sm-6 text-left">
-                                            <h4 class="text-size-daihan">Ở ngắn hạn</h4>
-                                            <p class="info_title">
-                                                1-89 ngày
-                                            </p>
-                                            <p class="info_title">
-                                                200,000 <sup>đ/ngày</sup>
-                                            </p>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="box-list-dichvu">
-                                                <div class="box_small_dichvu">
-                                                    <img src="images/dichvu1.png" alt=""/>
-                                                    <p>
-                                                        nhà hàng, <br/>
-                                                        quầy ăn/uống
-                                                    </p>
+                                <div class="tab-pane fade" id="home2-mobile" role="tabpanel"
+                                     aria-labelledby="home2-mobile-tab">
+                                    <p class="address_text text-left mt-3 mb-3">
+                                        Số 1 - 3, đường D4, KDC Him Lam, P.Tân Hưng, <br/> Quận 7, TPHCM, Việt Nam.
+                                    </p>
+                                    <div id="carousel-home-mobile-1"
+                                         class="carousel carousel-working carousel-even slide carousel-even--active"
+                                         data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-home-mobile-1" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-home-mobile-1" data-slide-to="1"></li>
+                                            <li data-target="#carousel-home-mobile-1" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner  animated fadeInLeftBig">
+                                            <div class="carousel-item active">
+                                                <div class="carousel-img">
+                                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
                                                 </div>
-                                                <div class="box_small_dichvu">
-                                                    <img src="images/dichvu_dondep.png" alt=""/>
-                                                    <p>
-                                                        dọn dẹp
-                                                    </p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="carousel-img">
+                                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
                                                 </div>
-                                                <div class="box_small_dichvu">
-                                                    <img src="images/dichvu_khonggian.png" alt=""/>
-                                                    <p>
-                                                        không gian <br/>
-                                                        co-working
-                                                    </p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="carousel-img">
+                                                    <img src="images/Livingroom_img.png" class="img_banner d-block" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6"></div>
-                                    <div class="col-6 text-right">
-                                        <a href="#" class="link_img link_img--right">
-                                            <img src="images/btn_datphong.png" alt=""/>
+                                    <p data-toggle="collapse" class="collapse_link_btn"
+                                       href="#collapseExample-1"
+                                       role="button"
+                                       aria-expanded="false"
+                                       aria-controls="collapseExample-1">
+                                        <span>xem bảng giá</span>
+                                        <img src="images/arr_link.png" alt=""/>
+                                    </p>
+                                    <div class="collapse collapse_mobile" id="collapseExample-1">
+                                        <div class="p-4">
+                                            <div class="bor-line-both pt-5 pb-2 mb-2">
+                                                <div class="row text-left">
+                                                    <div class="col-sm-6">
+                                                        <h3 class="text-size-daihan">Ở dài hạn</h3>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        Các dịch vụ
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row text-left">
+                                                <div class="col-sm-6">
+                                                    <p class="info_title">12 tháng: 12,000,000 đ</p>
+                                                    <p class="info_title">6 tháng : 2,000,000 đ</p>
+                                                    <p class="info_title">3 tháng: 500,000 đ</p>
+                                                    <p class="info_title">1 tháng: 200,000 đ</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="box-list-dichvu">
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu1.png" alt=""/>
+                                                            <p>
+                                                                nhà hàng, <br/>
+                                                                quầy ăn/uống
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_dondep.png" alt=""/>
+                                                            <p>
+                                                                dọn dẹp
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_khonggian.png" alt=""/>
+                                                            <p>
+                                                                không gian <br/>
+                                                                co-working
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_khonggian.png" alt=""/>
+                                                            <p>
+                                                                không gian <br/>
+                                                                co-living
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_dauxe.png" alt=""/>
+                                                            <p>
+                                                                đậu xe
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_khochothue.png" alt=""/>
+                                                            <p>
+                                                                kho cho thuê
+                                                            </p>
+                                                        </div>
+                                                        <div class="box_small_dichvu">
+                                                            <img src="images/dichvu_khoahoc.png" alt=""/>
+                                                            <p>
+                                                                khoá học đặc biệt <br/>
+                                                                buổi chia sẻ
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bor-y">
+                                                <div class="row">
+                                                    <div class="col-sm-6 text-left">
+                                                        <h4 class="text-size-daihan">Ở ngắn hạn</h4>
+                                                        <p class="info_title">
+                                                            1-89 ngày
+                                                        </p>
+                                                        <p class="info_title">
+                                                            200,000 <sup>đ/ngày</sup>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="box-list-dichvu">
+                                                            <div class="box_small_dichvu">
+                                                                <img src="images/dichvu1.png" alt=""/>
+                                                                <p>
+                                                                    nhà hàng, <br/>
+                                                                    quầy ăn/uống
+                                                                </p>
+                                                            </div>
+                                                            <div class="box_small_dichvu">
+                                                                <img src="images/dichvu_dondep.png" alt=""/>
+                                                                <p>
+                                                                    dọn dẹp
+                                                                </p>
+                                                            </div>
+                                                            <div class="box_small_dichvu">
+                                                                <img src="images/dichvu_khonggian.png" alt=""/>
+                                                                <p>
+                                                                    không gian <br/>
+                                                                    co-working
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center w-100 mt-3">
+                                        <a href="#" class="link_img">
+                                            <img src="images/btn_datphong.png" width="100" class="mx-auto" alt=""/>
                                         </a>
                                     </div>
                                 </div>
@@ -610,8 +997,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <div class="section my-5">
@@ -645,7 +1030,7 @@
     <div class="contain_subscribe mb-5">
         <div class="container">
             <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between">
-                <h2 class="pt-3 mb-4 mb-sm-0">Đăng ký nhận thông tin</h2>
+                <h2 class="pt-sm-3 mb-sm-4">Đăng ký nhận thông tin</h2>
                 <form action="" class="contain_subscribe--form mw-100">
                     <input type="text" placeholder="example@gmail.com">
                     <button type="submit">

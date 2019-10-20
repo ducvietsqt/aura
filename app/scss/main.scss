@@ -55,13 +55,19 @@ button {
 
 .isDesktop {
     display: none !important;
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         display: block !important;
     }
 }
 .isMobile {
     display: none !important;
-    @media (max-width: 766px) {
+    @media (max-width: 767px) {
         display: block !important;
+    }
+}
+* {
+    outline: none;
+    &:hover, &:focus {
+        outline: none;
     }
 }

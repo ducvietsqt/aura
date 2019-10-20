@@ -180,8 +180,14 @@
   background-position: 50% 100%;
   background-size: 110% 390px;
   background-repeat: no-repeat;
+
   @include for-tablet-only {
     background-size: cover;
+    margin-top: 0px;
+  }
+  @include for-767-only {
+    padding-bottom: 80px;
+    margin-top: -40px;
   }
   //overflow: hidden;
   .carousel-img {
@@ -267,6 +273,9 @@
 .nav-tabs-aura {
   border: none;
   .nav-item {
+    @include for-767-only {
+      width: 50%;
+    }
     &:first-child {
       .nav-link {
         border-left: none !important;
@@ -321,6 +330,9 @@
 .tab-content-aura {
   .address_text {
     font-size: 14px;
+    @include for-767-only {
+      margin-bottom: 50px !important;
+    }
   }
 }
 
@@ -395,9 +407,15 @@
   background-repeat: no-repeat;
   display: flex;
   margin: 200px 0px -140px 0px;
+
   @include for-tablet-only {
-    background-size: cover;
+    background-size: 130% 100%;
+    background-position: -30px 0px;
     flex-wrap: wrap;
+  }
+  @include for-phone-only {
+    //margin: 140px 0px -140px 0px;
+    background-size: 130% 90%;
   }
   .lef_img {
     width: calc(100% - 600px);
@@ -437,6 +455,12 @@
     }
     .carousel-caption {
       transform: translateY(-150px);
+      @media(max-width: 767px) {
+        width: 100%;
+        max-width: none;
+        transform: translateY(-200px);
+      }
+
       &--working {
         position: static;
         margin: 0px;
@@ -468,4 +492,64 @@
       }
     }
   }
+}
+
+.box_links_sp1 {
+  .nav-tabs {
+    .nav-item {
+      width: 50%;
+      &:last-child {
+        .nav-link {
+          border-right: 0px;
+        }
+      }
+      .nav-link {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #000000;
+        border: solid 2px #000000;
+        border-left: none;
+        border-radius: 0px;
+
+        &.active {
+          background: #E6E7E8;
+          border-bottom-color: transparent;
+          img {
+            transform: rotate(90deg);
+          }
+        }
+        img {
+          margin-left: 10px;
+          width: 15px;
+        }
+      }
+    }
+  }
+}
+
+.collapse_link_btn {
+  //border: solid 1px red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    transform-origin: center center;
+    width: 15px;
+  }
+  &[aria-expanded="true"] {
+    img {
+      transform: rotate(90deg);
+    }
+  }
+  span {
+    border-bottom: solid 1px #000000;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
+.collapse_mobile {
+  background: #ffffff;
 }
