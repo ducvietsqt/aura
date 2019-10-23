@@ -358,13 +358,13 @@
     }
   }
   button {
-    clear: both;
+    /*clear: both;
     background: none;
     display: block;
     width: 150px;
     float: right;
     border: none;
-    margin-top: 10px;
+    margin-top: 10px;*/
     &:focus, &:active {
       outline: none;
     }
@@ -558,16 +558,27 @@
 
 
 @keyframes slideFoo {
-  from {
+  0% {
     //-webkit-transform: translate3d(-100%, 0, 0);
     //transform: translate3d(-100%, 0, 0);
     left: -10%;
     visibility: visible;
   }
 
-  to {
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+
+  100% {
     //-webkit-transform: translate3d(0, 0, 0);
     //transform: translate3d(400%, 0, 0);
+    opacity: 0;
     left: 100%;
   }
 }
@@ -579,4 +590,64 @@
   p, a, .link_foo {
     font-size: 12px;
   }
+}
+
+/*.btn_box_shadow {
+  border: solid 2px #000000;
+  display: flex;
+  align-items: center;
+  clear: both;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4);
+  white-space: nowrap;
+  img {
+    width: 15px;
+  }
+}*/
+
+
+.btn_box_shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-color: #000;
+  border: none;
+  clear: both;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  img {
+    width: 15px;
+  }
+
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  //background-color: rgba(219,87,5,1);
+  background: #f37723;
+  //font-weight: 700;
+  padding: 14px 20px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  //-webkit-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+  box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+  //box-shadow: 2px -2px 0px rgba(255,255,255,1), 0px 9px 25px rgba(0, 0, 0, 0.7);
+  //margin: 100px auto;
+  //width: 160px;
+  //text-align: center;
+
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+.btn_box_shadow:active {
+  -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  position: relative;
+  top: 6px;
 }
